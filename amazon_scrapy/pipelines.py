@@ -5,7 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from amazon_scrapy.items import CateItem, ReviewProfileItem, ReviewDetailItem, SalesRankingItem, KeywordRankingItem
-from amazon_scrapy.db.dbhelper import AmazonCateModel, DBSession
+from amazon_scrapy.db.dbhelper import AmazonCateModel, AmazonKeyWordRankModel, DBSession
 
 class AmazonScrapyPipeline(object):
     def open_spider(self, spider):
@@ -23,7 +23,12 @@ class AmazonScrapyPipeline(object):
             )
             self.session.add(cate)
 
+        if isinstance(item, KeywordRankingItem):
+            key_item = AmazonKeyWordRankModel(**item)
+            self.session.add(key_item)
+
         self.session.commit()
 
     def close_spider(self, spider):
         self.session.close()
+

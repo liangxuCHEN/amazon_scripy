@@ -67,6 +67,10 @@ class KeywordRankingItem(scrapy.Item):
     high_price = scrapy.Field()
     stars = scrapy.Field()
     reviews = scrapy.Field()
+    project_name = scrapy.Field()
+    shop_name = scrapy.Field()
+    item_pic = scrapy.Field()
+    item_name = scrapy.Field()
 
 
 class SalesRankingItem(scrapy.Item):

@@ -38,7 +38,6 @@ class CateSpider(scrapy.Spider):
             item['link'] = link.split('ref=')[0]
             item['level'] = leve_cur
             item['pid'] = 1
-            print(item)
             yield item
             if int(float(self.level)) > 1:
                 yield scrapy.Request(url=item['link'], callback=self.parse, meta=response.meta)

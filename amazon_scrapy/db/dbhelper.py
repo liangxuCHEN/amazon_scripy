@@ -28,6 +28,22 @@ class AmazonCateModel(Base):
     pid = Column(Integer)
     title = Column(String(100))
 
+class AmazonKeyWordRankModel(Base):
+    __tablename__ = 'tab_amazaon_keyword_rank'
+
+    id = Column(Integer, primary_key=True)
+    skwd_id = Column(String(15))
+    rank = Column(Integer)
+    date = Column(DateTime)
+    project_name = Column(String(100))
+    currency = Column(String(5))
+    low_price = Column(Float)
+    high_price = Column(Float)
+    stars = Column(Float)
+    reviews = Column(Integer)
+    shop_name = Column(String(256))
+    item_pic = Column(String(500))
+    item_name = Column(String(500))
 
 #做一个表记录搜索历史
 # class TaoBaoProjectModel(Base):
