@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from scrapy.utils.project import get_project_settings  #导入seetings配置
-from sqlalchemy import create_engine, Column, String, DateTime, Integer, Float, func
+from sqlalchemy import create_engine, Column, String, DateTime, Integer, Float, func, JSON
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 #import redis
@@ -120,6 +120,22 @@ class ProjectModel(Base):
 
         }
 
+
+class VipBrandModel(Base):
+    """
+    唯品会品牌介绍
+    """
+
+    __tablename__ = 'tab_vip_brand'
+
+    id = Column(Integer, primary_key=True)
+    brand_id = Column(String(20))
+    brand_name = Column(String(100))
+    fav_person_number = Column(Integer)
+    discount_index_min_tips = Column(Float)
+    detail_json = Column(JSON, default=JSON.NULL)
+    created_at = Column(DateTime, server_default=func.now())
+    updated_at = Column(DateTime, server_default=func.now(), server_onupdate=func.now())
 
 #创建数据表，如果数据表存在则忽视！！！
 Base.metadata.create_all(engine)

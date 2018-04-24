@@ -5,8 +5,9 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from amazon_scrapy.items import CateItem, ReviewProfileItem, ReviewDetailItem, SalesRankingItem,\
-    KeywordRankingItem, VipDataItem
-from amazon_scrapy.db.dbhelper import AmazonCateModel, AmazonKeyWordRankModel, DBSession, VipKewyWordModel
+    KeywordRankingItem, VipDataItem, VipBandItem
+from amazon_scrapy.db.dbhelper import AmazonCateModel, AmazonKeyWordRankModel, DBSession, VipKewyWordModel,\
+    VipBrandModel
 
 
 class AmazonScrapyPipeline(object):
@@ -33,6 +34,14 @@ class AmazonScrapyPipeline(object):
         if isinstance(item, VipDataItem):
             key_item = VipKewyWordModel(**item)
             self.session.add(key_item)
+
+        if isinstance(item, VipBandItem):
+            vip_brand = self.session.query(VipBrandModel).filter_by(brand_id=item['brand_id'])
+            if vip_brand:
+                vip_brand.update(item)
+            else:
+                key_item = VipBrandModel(**item)
+                self.session.add(key_item)
 
         self.session.commit()
 

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd7d0ae-3a3f-4d0b-9c38-2e517591c866" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amazon_scrapy/db/dbhelper.py" afterPath="$PROJECT_DIR$/amazon_scrapy/db/dbhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amazon_scrapy/items.py" afterPath="$PROJECT_DIR$/amazon_scrapy/items.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amazon_scrapy/pipelines.py" afterPath="$PROJECT_DIR$/amazon_scrapy/pipelines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amazon_scrapy/spiders/weipinghui/vip_scrapu.py" afterPath="$PROJECT_DIR$/amazon_scrapy/spiders/weipinghui/vip_scrapu.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vip_scrapu.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vip_scrapu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon_scrapy/spiders/weipinghui/vip_scrapu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="231">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -31,20 +33,20 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon_scrapy/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="480">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <element signature="e#193#326#0" expanded="true" />
+                <element signature="e#193#339#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/amazon_scrapy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -53,8 +55,8 @@
       <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon_scrapy/db/dbhelper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+            <state relative-caret-position="682">
+              <caret line="131" column="12" lean-forward="false" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="12" />
               <folding>
                 <element signature="e#24#92#0" expanded="true" />
               </folding>
@@ -65,8 +67,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon_scrapy/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="82" column="33" lean-forward="true" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+            <state relative-caret-position="742">
+              <caret line="103" column="12" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -78,6 +80,10 @@
     <findStrings>
       <find>data-id</find>
       <find>VipKewyWordModel</find>
+      <find>meta</find>
+      <find>brand_id</find>
+      <find>print</find>
+      <find>del</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,10 +92,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/amazon_scrapy/settings.py" />
         <option value="$PROJECT_DIR$/amazon_scrapy/items.py" />
-        <option value="$PROJECT_DIR$/amazon_scrapy/pipelines.py" />
         <option value="$PROJECT_DIR$/amazon_scrapy/db/dbhelper.py" />
+        <option value="$PROJECT_DIR$/amazon_scrapy/settings.py" />
+        <option value="$PROJECT_DIR$/amazon_scrapy/pipelines.py" />
         <option value="$PROJECT_DIR$/amazon_scrapy/spiders/weipinghui/vip_scrapu.py" />
       </list>
     </option>
@@ -156,28 +162,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amazon_scrapy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amazon_scrapy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amazon_scrapy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weipinghui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,49 +315,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/amazon_scrapy/settings.py">
+    <entry file="file://$PROJECT_DIR$/amazon_scrapy/spiders/weipinghui/vip_scrapu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="231">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amazon_scrapy/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="82" column="33" lean-forward="true" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        <state relative-caret-position="742">
+          <caret line="103" column="12" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon_scrapy/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="e#193#326#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amazon_scrapy/db/dbhelper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        <state relative-caret-position="682">
+          <caret line="131" column="12" lean-forward="false" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="12" />
           <folding>
             <element signature="e#24#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon_scrapy/spiders/weipinghui/vip_scrapu.py">
+    <entry file="file://$PROJECT_DIR$/amazon_scrapy/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#193#339#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon_scrapy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

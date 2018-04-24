@@ -98,3 +98,11 @@ class VipDataItem(scrapy.Item):
     sell_price_min_tips = scrapy.Field()
     discount_index_min_tips = scrapy.Field()
     created = scrapy.Field()
+
+
+class VipBandItem(scrapy.Item):
+    brand_id = scrapy.Field()
+    brand_name = scrapy.Field()
+    fav_person_number = scrapy.Field()
+    detail_json = scrapy.Field()
+    discount_index_min_tips = scrapy.Field()
